@@ -1,3 +1,9 @@
+# Presentación
+<img width="1024" height="682" alt="Guayerd" src="https://github.com/user-attachments/assets/de4886dc-1ec3-49a9-8d48-6661cdc20159" />
+
+
+
+---
 # TEMA: Análisis de los diferentes métodos de pago utilizados en las ventas de la tienda Aurelion
 # PROBLEMA: 
 La tienda no tiene visibilidad sobre los métodos de pago usados por los clientes.
