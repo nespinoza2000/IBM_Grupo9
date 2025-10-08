@@ -67,33 +67,37 @@ La tienda puede invertir en mejorar los métodos de pago más demandados. Puede 
     - Analizar variaciones temporales(por días de la semana o fechas específicas).
 3. Generar gráficos y reportes para una mejor interpretación.
 
-# PSEUDOCÓDIGO
-1. Importar librerías(pandas y numpy)
-2. Cargar los datos(los 4 datasets)
-3. Unir tablas por claves
-    - ventas_detalle ← unir(ventas, detalle, por="id_venta")
-    - data ← unir(ventas_detalle, clientes, por="id_cliente")
-    - data ← unir(data, productos, por="id_producto")
-4. Analizar métodos de pago:
-    - listar los medios de pago
-    - contar los métodos de pago
-    - ver los métodos de pago más usados (contar)
-5. Analizar productos por método de pago:
-    - agrupar los métodos de pago según el id del producto
-    - sumar cantidad vendida
-    - obtener top productos por métodos de pago
-6. Analizar ciudades:
-    - agrupar datos de métodos de pago según la ciudad
-    - contar clientes por métodos de pago y ciudad
-7. Analizar días de la semana:
-    - extraer el día de la semana
-    - agrupar por medio_pago y dia_semana
-    - contar número de ventas
-8. Mostrar resultados
-    - imprimir frecuencia de medios de pago
-    - imprimir productos más vendidos por medio
-    - imprimir ciudades con mayor incidencia
-    - imprimir uso por día de semana
+# PSEUDOCÓDIGO MENÚ
+1. Problema
+    1. Imprimir problemática
+2. Solución 
+    1. Importar librerías(pandas y numpy)
+    2. Cargar los datos(los 4 datasets)
+    3. Unir tablas por claves
+        - ventas_detalle ← unir(ventas, detalle, por="id_venta")
+        - data ← unir(ventas_detalle, clientes, por="id_cliente")
+        - data ← unir(data, productos, por="id_producto")
+    4. Analizar métodos de pago:
+        - listar los medios de pago
+        - contar los métodos de pago
+        - ver los métodos de pago más usados (contar)
+    5. Analizar productos por método de pago:
+        - agrupar los métodos de pago según el id del producto
+        - sumar cantidad vendida
+        - obtener top productos por métodos de pago
+    6. Analizar ciudades:
+        - agrupar datos de métodos de pago según la ciudad
+        - contar clientes por métodos de pago y ciudad
+    7. Analizar días de la semana:
+        - extraer el día de la semana
+        - agrupar por medio_pago y dia_semana
+        - contar número de ventas
+    8. Mostrar resultados
+        - imprimir frecuencia de medios de pago
+        - imprimir productos más vendidos por medio
+        - imprimir ciudades con mayor incidencia
+        - imprimir uso por día de semana
+3. Diagrama de flujo
 
 # DIAGRAMA DEL PROGRAMA
 ![Diagrama de flujo](Diagrama_de_flujo.png)
