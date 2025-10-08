@@ -74,9 +74,11 @@ La tienda puede invertir en mejorar los métodos de pago más demandados. Puede 
 3. Generar gráficos y reportes para una mejor interpretación.
 
 # PSEUDOCÓDIGO MENÚ
-1. Problema
+1. Tema
+    1. Imprimir temática
+2. Problema
     1. Imprimir problemática
-2. Solución 
+3. Solución 
     1. Importar librerías(pandas y numpy)
     2. Cargar los datos(los 4 datasets)
     3. Unir tablas por claves
@@ -103,7 +105,8 @@ La tienda puede invertir en mejorar los métodos de pago más demandados. Puede 
         - imprimir productos más vendidos por medio
         - imprimir ciudades con mayor incidencia
         - imprimir uso por día de semana
-3. Diagrama de flujo
+4. Base de datos
+    1. Imprimir el contenido de Clientes, Ventas, Productos y Detalle_ventas.
 
 # DIAGRAMA DEL PROGRAMA
 ![Diagrama de flujo](Diagrama_de_flujo.png)
