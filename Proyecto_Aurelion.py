@@ -4,10 +4,10 @@ import openpyxl
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-ventas=pd.read_excel("Ventas.xlsx")
-clientes=pd.read_excel('Clientes.xlsx')
-detalle=pd.read_excel('Detalle_ventas.xlsx')
-productos=pd.read_excel('Productos.xlsx')
+ventas=pd.read_excel("Base\\Ventas.xlsx")
+clientes=pd.read_excel('Base\\Clientes.xlsx')
+detalle=pd.read_excel('Base\\Detalle_ventas.xlsx')
+productos=pd.read_excel('Base\\Productos.xlsx')
 
 ventas_detalle=pd.merge(ventas,detalle,on='id_venta')
 datos=pd.merge(ventas_detalle,productos,on='id_producto')
