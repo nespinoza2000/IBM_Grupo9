@@ -15,9 +15,9 @@ Planteamos desarrollar un sistema en Python que analice las ventas y detecte pat
     - Detectar tendencias o patrones de uso según productos o regiones.
 
 Con esa información pretendemos:
-    * Incentivar el uso de ciertos métodos de pago.
-    * Invertir en mejorar la infraestructura de cobro más demandado.
-    * Ofrecer al cliente su medio de pago preferido.
+    - Incentivar el uso de ciertos métodos de pago.
+    - Invertir en mejorar la infraestructura de cobro más demandado.
+    - Ofrecer al cliente su medio de pago preferido.
 
 # DATASET DE REFERENCIA
 
