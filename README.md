@@ -4,29 +4,30 @@
 
 
 ---
-# TEMA: Análisis de los diferentes métodos de pago utilizados en las ventas de la tienda Aurelion
+# TEMA: RETAIL  - Análisis de los métodos de pago utilizados en las ventas
 # PROBLEMA: 
-La tienda no tiene visibilidad sobre los métodos de pago usados por los clientes.
-Actualmente, vende sin medir el comportamiento de pago, lo que impide:
+Falta de visibilidad respecto a los métodos de pago utilizados por los clientes.
+
+# SOLUCIÓN:
+Desarrollar un sistema en Python para analizar las ventas y detectar patrones de uso de medios de pago.
 - Identificar qué medios de pago son los más usados.
 - Detectar tendencias o patrones de uso según productos o regiones.
 - Tomar decisiones informadas sobre qué servicios financieros priorizar.
 
-# SOLUCIÓN:
-- Desarrollar un sistema en Python para analizar las ventas y detectar patrones de uso de medios de pago.
-
 # DATASET DE REFERENCIA
 
 ## FUENTE
-Dataset de la tienda Aurelion.
+Dataset de la tienda Aurelion, compuesto por 4 archivos de Excel (.xlsx). 
+
 ## DEFINICIÓN
-Incluye 4 tablas principales distribuidas en 4 archivos distintos de excel (.xlsx): 
-- Clientes
-- Detalle_ventas
-- Productos
-- Ventas
+Incluye 4 tablas principales distribuidas en 4 archivos distintos: 
+- Clientes (Contiene información de los usuarios registrados)
+- Productos (Lista de productos disponibles con sus características)
+- Ventas (Registra cada transacción realizada por los clientes)
+- detalle Ventas (Desglosa los productos vendidos en cada transacción, con cantidades e importes)
+
 ## ESTRUCTURA Y TIPO DE DATO
-- Clietes: información de los clientes que compran en la tienda.
+- Clientes: información de los clientes que compran en la tienda.
     - id_cliente (int)
     - nombre_cliente (str)
     - email (str)
@@ -52,6 +53,11 @@ Incluye 4 tablas principales distribuidas en 4 archivos distintos de excel (.xls
     - email (str)
     - medio_pago (str)
 ## ESCALA
+La base de datos presenta una escala de:
+* Clientes: 100 registros.
+* Productos: 100 registros.
+* Ventas: 120 registros.
+* Detalle de ventas: más de 3000 registros (alta granularidad).
 
 # INFORMACIÓN
 La tienda puede invertir en mejorar los métodos de pago más demandados. Puede replantear la oferta de los productos con baja salida e incentivar ciertos métodos de pago.
