@@ -1,57 +1,65 @@
 # Presentación
 <img width="1024" height="682" alt="Guayerd" src="https://github.com/user-attachments/assets/de4886dc-1ec3-49a9-8d48-6661cdc20159" />
 
-
-
 ---
-# TEMA: RETAIL  - Análisis de los métodos de pago utilizados en las ventas
+# TEMA:
+RETAIL - Análisis de los métodos de pago utilizados en las ventas
+
 # PROBLEMA: 
-Falta de visibilidad respecto a los métodos de pago utilizados por los clientes.
+Durante el análisis exploratorio realizado en la base de datos, identificamos una **falta de visibilidad sobre el comportamiento de ventas**, especialmente, en relación **con los medios de pago utilizados**.
 
 # SOLUCIÓN:
-Desarrollar un sistema en Python para analizar las ventas y detectar patrones de uso de medios de pago.
-- Identificar qué medios de pago son los más usados.
-- Detectar tendencias o patrones de uso según productos o regiones.
-- Tomar decisiones informadas sobre qué servicios financieros priorizar.
+Planteamos desarrollar un sistema en Python que analice las ventas y detecte patrones de uso de los medios de pago en las ventas, con el objetivo de:
+    - Identificar qué medios de pago son los más usados.
+    - Identificar cuál es el ingreso promedio por venta que genera cada medio de pago.
+    - Detectar tendencias o patrones de uso según productos o regiones.
+
+Con esa información pretendemos:
+    * Incentivar el uso de ciertos métodos de pago.
+    * Invertir en mejorar la infraestructura de cobro más demandado.
+    * Ofrecer al cliente su medio de pago preferido.
 
 # DATASET DE REFERENCIA
 
-## FUENTE
-Dataset de la tienda Aurelion, compuesto por 4 archivos de Excel (.xlsx). 
+## FUENTE DE DATOS Y DEFINICIÓN
+La base de datos proviene de la tienda Aurelion y está compuesta por 4 archivos de Excel (.xlsx).
 
-## DEFINICIÓN
-Incluye 4 tablas principales distribuidas en 4 archivos distintos: 
-- Clientes (Contiene información de los usuarios registrados)
-- Productos (Lista de productos disponibles con sus características)
-- Ventas (Registra cada transacción realizada por los clientes)
-- detalle Ventas (Desglosa los productos vendidos en cada transacción, con cantidades e importes)
+Incluye 4 tablas principales: 
+- **Clientes** (Contiene información de los usuarios registrados que compran en la tienda)
+- **Productos** (Lista de productos disponibles con sus características)
+- **Ventas** (Registra cada transacción realizada por los clientes)
+- **Detalle_Ventas** (Desglosa los productos vendidos en cada transacción, con cantidades e importes)
 
 ## ESTRUCTURA Y TIPO DE DATO
-- Clientes: información de los clientes que compran en la tienda.
+### Clientes (5 campos):
     - id_cliente (int)
     - nombre_cliente (str)
     - email (str)
     - ciudad (str)
     - fecha_alta (date)
-- Detalle_ventas: cantidad y precios de productos vendidos en cada venta.
-    - id_venta (int)
-    - id_producto (int)
-    - nombre_producto (str)
-    - cantidad (int)
-    - precio_unitario (float)
-    - importe (float)
-- Productos: artículos que ofrece la tienda según su categoría y precio.
+
+### Productos (4 campos):
     - id_producto (int)
     - nombre_producto (str)
     - categoria (str)
-    - precio_unitario (float)
-- Ventas: registra cada transacción del cliente.
+    - precio_unitario (float)   
+
+### Ventas (5 campos):
     - id_venta (int)
     - fecha (date)
     - id_cliente (int)
     - nombre_cliente (str)
     - email (str)
     - medio_pago (str)
+
+### Detalle_ventas (6 campos):
+    - id_venta (int)
+    - id_producto (int)
+    - nombre_producto (str)
+    - cantidad (int)
+    - precio_unitario (float)
+    - importe (float)
+
 ## ESCALA
 La base de datos presenta una escala de:
 * Clientes: 100 registros.
@@ -59,11 +67,25 @@ La base de datos presenta una escala de:
 * Ventas: 120 registros.
 * Detalle de ventas: más de 3000 registros (alta granularidad).
 
+# REFLEXIONES SOBRE LA BASE DE DATOS
+Durante la revisión inicial, detectamos algunos obstáculos:
+Las entidades no están completamente normalizadas. Por ejemplo:
+  - En “Ventas” se repite información del cliente (nombre, email).
+  - En “Detalle de Ventas” se repite información del producto (nombre, precio).
+* No existen relaciones explícitas entre las entidades (PK-FK), por lo que hay que incluirlas en un modelo de datos relacional.
+
+Algunos campos que pueden servir como llaves entre entidades podrían ser:
+* id_cliente conecta clientes con ventas.
+* id_venta conecta ventas con detalle_ventas.
+* id_producto conecta detalle_ventas con productos.
+
 # INFORMACIÓN
-La tienda puede invertir en mejorar los métodos de pago más demandados. Puede replantear la oferta de los productos con baja salida e incentivar ciertos métodos de pago.
+La tienda puede invertir en mejorar los métodos de pago más demandados. Puede incentivar ciertos métodos de pago.
 
 - ¿Cuáles son los métodos de pago más utilizados?
+- ¿Qué volumen total de ventas representa cada medio de pago (en dinero y cantidad)?
 - ¿Qué productos son los más comprados según el método de pago?
+- ¿Existen relaciones entre tipo de producto y medio de pago? 
 - ¿De qué lugares provienen los clientes que usan esos métodos de pago?
 - ¿Los clientes usan siempre el mismo método de pago?
 - ¿Qué días de la semana se usan más y menos los diferentes métodos de pago?
