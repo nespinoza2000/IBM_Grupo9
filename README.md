@@ -10,7 +10,7 @@
 - Karina Pineda
 - Juan Chero
 - Agostina Torres
-⁠- Yeisim Cerna
+- Yeisim Cerna
 - Diego Gutiérrez
 - Sofia González
 - Andrea Castro
