@@ -2,6 +2,19 @@
 <img width="1024" height="682" alt="Guayerd" src="https://github.com/user-attachments/assets/de4886dc-1ec3-49a9-8d48-6661cdc20159" />
 
 ---
+
+## Integrantes
+
+- Ivan Zirulnik
+- Nicolas Espinoza
+- Karina Pineda
+- Juan Chero
+- Agostina Torres
+⁠- Yeisim Cerna
+- Diego Gutiérrez
+- Sofia González
+- Andrea Castro
+
 # TEMA:
 RETAIL - Análisis de los métodos de pago utilizados en las ventas
 
