@@ -1,5 +1,6 @@
 # Proyecto Aurelion
 **Autor**: Grupo 9 - Integrantes:
+            Andrea Castro,
             Yeisim Cerna,
             Juan Chero,
             Nicolas Espinoza,
