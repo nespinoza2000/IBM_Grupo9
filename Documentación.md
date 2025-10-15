@@ -1,12 +1,12 @@
 # Proyecto Aurelion
 **Autor**: Grupo 9 - Integrantes:
-            Yeisim Cerna
-            Juan Chero
-            Nicolas Espinoza
-            Sofia González
-            Diego Gutiérrez
-            Karina Pineda
-            Agostina Torres
+            Yeisim Cerna,
+            Juan Chero,
+            Nicolas Espinoza,
+            Sofia González,
+            Diego Gutiérrez,
+            Karina Pineda,
+            Agostina Torres,
             Ivan Zirulnik
 **Fecha**: 28/09/2025
 
