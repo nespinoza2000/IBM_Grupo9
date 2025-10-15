@@ -9,7 +9,7 @@
 * Karina Pineda
 * Agostina Torres
 * Ivan Zirulnik
-**Fecha**: 28/09/2025
+* **Fecha**: 28/09/2025
 
 ##  CONTEXTO DEL PROYECTO Y PLANTEAMIENTO DEL PROBLEMA
 
