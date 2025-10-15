@@ -1,14 +1,6 @@
 # Proyecto Aurelion
-**Autor**: Grupo 9 - Integrantes:
-            Andrea Castro,
-            Yeisim Cerna,
-            Juan Chero,
-            Nicolas Espinoza,
-            Sofia González,
-            Diego Gutiérrez,
-            Karina Pineda,
-            Agostina Torres,
-            Ivan Zirulnik
+**Autor**: Grupo 9 
+**Integrantes**: Andrea Castro, Yeisim Cerna, Juan Chero, Nicolas Espinoza, Sofia González, Diego Gutiérrez, Karina Pineda, Agostina Torres, Ivan Zirulnik
 **Fecha**: 28/09/2025
 
 ##  CONTEXTO DEL PROYECTO Y PLANTEAMIENTO DEL PROBLEMA
