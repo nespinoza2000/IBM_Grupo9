@@ -129,7 +129,6 @@ Algunos campos que pueden servir como llaves entre entidades podrían ser:
     * Problema
     * Solución
     * Fuente de Datos
-    * Estructura de las entidades
 4. Mostrar información de la sección solicitada
 5. Repetir las veces que sea necesario según lo solicite el usuario
 6. FIN
@@ -155,3 +154,4 @@ FIN
 ## DIAGRAMA DE FLUJO
 
 <img width="1024" height="682"  src="Diagrama de flujo Documentacion.jpg" />
+
