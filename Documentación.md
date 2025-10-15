@@ -144,4 +144,5 @@ INICIO
 FIN
 
 ## DIAGRAMA DE FLUJO
-<img width="1024" height="682"  src="hhttps://github.com/nespinoza2000/IBM_Grupo9/blob/main/Diagrama%20de%20flujo%20Documentacion.jpg" />
+
+<img width="1024" height="682"  src="Diagrama de flujo Documentacion.jpg" />
