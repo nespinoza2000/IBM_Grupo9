@@ -1,4 +1,8 @@
-# Proyecto Aurelion
+# Presentación
+<img width="1024" height="682" alt="Guayerd" src="https://github.com/user-attachments/assets/de4886dc-1ec3-49a9-8d48-6661cdc20159" />
+
+---
+
 **Autor**: Grupo 9 - Integrantes:
 * Andrea Castro
 * Yeisim Cerna
@@ -155,5 +159,6 @@ FIN
 ## DIAGRAMA DE FLUJO
 
 <img width="1024" height="682"  src="Diagrama de flujo Documentacion.jpg" />
+
 
 
