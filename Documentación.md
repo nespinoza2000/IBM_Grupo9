@@ -71,43 +71,49 @@ La base de datos presenta una escala de:
 
 #### Clientes
 Cuenta con 5 campos:
-+ id_cliente (PK) -int-
-+ nombre_cliente -str-          (NOMINAL)
-+ email -str-                   (NOMINAL)
-+ ciudad -str-                  (NOMINAL)  
-    - Carlos Paz - Rio Cuarto - Villa Maria - Cordoba - Mendiolaza - Alta Gracia
-+ fecha alta -date-             (INTERVALO)
-    - 01/01/2023 a 10/04/2023
+| Campo         | Tipo     | Escala de medición | Descripción                              | Valores/Rango                           |
+|---------------|----------|--------------------|------------------------------------------|-----------------------------------------|
+| id_cliente    | int      | Razón              | Identificador único de cliente (PK)      | —                                       |
+| nombre_cliente| string   | Nominal            | Nombre del cliente                       | —                                       |
+| email         | string   | Nominal            | Correo electrónico del cliente           | —                                       |
+| ciudad        | string   | Nominal            | Ciudad de residencia                     | Carlos Paz, Rio Cuarto, Villa Maria, Cordoba, Mendiolaza, Alta Gracia |
+| fecha_alta    | date     | Intervalo          | Fecha en que se registró el cliente      | 01/01/2023 a 10/04/2023                 |
+
 
 #### Productos
 Cuenta con 4 campos:
-+ id_producto (PK) -int-    (RAZON)
-    - 1 a 100
-+ nombre_producto -str-     (NOMINAL)
-+ categoria -str-           (NOMINAL)
-    - Alimentos - Limpieza
-+ precio_unitario -int-     (RAZON)
-    - 272 a 4982
+
+| Campo            | Tipo   | Escala de medición | Descripción                         | Valores/Rango    |
+|------------------|--------|--------------------|-------------------------------------|------------------|
+| id_producto      | int    | Razón              | Identificador único del producto (PK)| 1 a 100         |
+| nombre_producto  | string | Nominal            | Nombre comercial del producto       | —                |
+| categoría        | string | Nominal            | Tipo o categoría del producto       | Alimentos, Limpieza |
+| precio_unitario  | int    | Razón              | Precio de venta por unidad          | 272 a 4982       |
+
 
 #### Ventas
 Cuenta con 5 campos:
-+ id_venta (PK) -int-           (RAZON)
-    - 1 a 120
-+ fecha -date-                  (INTERVALO)
-    - 2/01/2024 al 28/06/2024
-+ id_cliente (FK) -int-         (RAZON)
-+ email -str-                   (NOMINAL)
-+ medio_pago -str-              (NOMINAL)
-    - tarjeta - qr - transferencia - efectivo 
+
+| Campo         | Tipo   | Escala de medición | Descripción                                  | Valores/Rango                           |
+|---------------|--------|--------------------|----------------------------------------------|-----------------------------------------|
+| id_venta      | int    | Razón              | Identificador único de la venta (PK)         | 1 a 120                                 |
+| fecha         | date   | Intervalo          | Fecha de realización de la venta             | 02/01/2024 al 28/06/2024                |
+| id_cliente    | int    | Razón              | Relación con cliente (FK)                    | —                                       |
+| email         | string | Nominal            | Email del cliente                            | —                                       |
+| medio_pago    | string | Nominal            | Método de pago utilizado                     | tarjeta, qr, transferencia, efectivo    |
 
 #### detalle ventas
 Cuenta con 6 campos:
-+ id_venta (FK)
-+ id_producto (FK)          (RAZON)
-+ nombre_producto           (NOMINAL)
-+ cantidad                  (RAZON)
-+ precio_unitario           (RAZON)
-+ importe                   (RAZON)
+
+| Campo            | Tipo   | Escala de medición | Descripción                                   |
+|------------------|--------|--------------------|-----------------------------------------------|
+| id_venta         | int    | Razón              | Identificador de la venta (FK)                |
+| id_producto      | int    | Razón              | Identificador del producto (FK)               |
+| nombre_producto  | string | Nominal            | Nombre del producto                           |
+| cantidad         | int    | Razón              | Cantidad vendida de ese producto              |
+| precio_unitario  | int    | Razón              | Precio por unidad en el momento de la venta   |
+| importe          | int    | Razón              | Total por línea: cantidad × precio_unitario   |
+
 
 
 
