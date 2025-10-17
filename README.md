@@ -45,33 +45,51 @@ Incluye 4 tablas principales:
 
 ## ESTRUCTURA Y TIPO DE DATO
 ### Clientes (5 campos):
-    - id_cliente (int)
-    - nombre_cliente (str)
-    - email (str)
-    - ciudad (str)
-    - fecha_alta (date)
+
+| Campo          | Tipo   |
+|----------------|--------|
+| id_cliente     | int    |
+| nombre_cliente | str    |
+| email          | str    |
+| ciudad         | str    |
+| fecha_alta     | date   |
+
+---
 
 ### Productos (4 campos):
-    - id_producto (int)
-    - nombre_producto (str)
-    - categoria (str)
-    - precio_unitario (float)   
+
+| Campo           | Tipo  |
+|-----------------|-------|
+| id_producto     | int   |
+| nombre_producto | str   |
+| categoria       | str   |
+| precio_unitario | float |
+
+---
 
 ### Ventas (5 campos):
-    - id_venta (int)
-    - fecha (date)
-    - id_cliente (int)
-    - nombre_cliente (str)
-    - email (str)
-    - medio_pago (str)
+
+| Campo          | Tipo |
+|----------------|------|
+| id_venta       | int  |
+| fecha          | date |
+| id_cliente     | int  |
+| nombre_cliente | str  |
+| email          | str  |
+| medio_pago     | str  |
+
+---
 
 ### Detalle_ventas (6 campos):
-    - id_venta (int)
-    - id_producto (int)
-    - nombre_producto (str)
-    - cantidad (int)
-    - precio_unitario (float)
-    - importe (float)
+
+| Campo           | Tipo  |
+|-----------------|-------|
+| id_venta        | int   |
+| id_producto     | int   |
+| nombre_producto | str   |
+| cantidad        | int   |
+| precio_unitario | float |
+| importe         | float |
 
 ## ESCALA
 La base de datos presenta una escala de:
