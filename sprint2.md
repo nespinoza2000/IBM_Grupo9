@@ -1,26 +1,14 @@
-Autor : Grupo 9 - Integrantes:
-
-Andrea Castro
-Yeism Cerna
-Juan Chero
-Nicolás Espinoza
-Sofía González
-Diego Gutiérrez
-Karina Pineda
-Agostina Torres
-Iván Zirulnik
-
-"""
-Este script contiene el informe del proyecto de análisis de ventas 
-en formato Markdown y una función para guardarlo como un archivo .md.
-"""
-
-def generar_y_guardar_informe():
-    """
-    Genera el contenido Markdown del informe y lo guarda en un archivo.
-    """
-    
-    informe_markdown = """
+**Autor**: Grupo 9 - Integrantes:
+* Andrea Castro
+* Yeisim Cerna
+* Juan Chero
+* Nicolas Espinoza
+* Sofia González
+* Diego Gutiérrez
+* Karina Pineda
+* Agostina Torres
+* Ivan Zirulnik
+  
 # 📊 Análisis de Métodos de Pago de la Tienda Aurelion
 
 Este documento detalla el proyecto de análisis de datos implementado en Python, enfocado en el estudio de las ventas y la distribución de los medios de pago utilizados por los clientes de la tienda Aurelion.
@@ -137,6 +125,6 @@ La función `generar_graficos_representativos()` genera visualizaciones para la 
         print(f"Error al escribir el archivo: {e}")
 
 
-if __name__ == "__main__":
-    generar_y_guardar_informe()
+
+
 
